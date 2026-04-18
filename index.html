@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>OPTIMA - Construction PWA</title>
+    <meta name="description" content="Digital Logbook for Civil Engineers" />
+    <meta name="theme-color" content="#0EA5E9" />
+    <link rel="manifest" href="/OPTIMA/manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="/OPTIMA/assets/index-UJ9_qtiC.js"></script>
+    <link rel="stylesheet" crossorigin href="/OPTIMA/assets/index-BsmBdngp.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js');
+      }
+    </script>
+    <script
+      defer
+      src="%VITE_ANALYTICS_ENDPOINT%/umami"
+      data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
+  </body>
+
+</html>
